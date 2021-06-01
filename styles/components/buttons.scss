@@ -4,6 +4,7 @@
     align-items: center;
   }
   &-form, &-primary, &-secondary, &-dropdown {
+    display: inline-block;
     cursor: pointer;
     border: none;
     padding: 10px 30px;

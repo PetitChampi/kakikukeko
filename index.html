@@ -9,18 +9,163 @@
   <link rel="stylesheet" href="styles/css/iconfont.css">
 </head>
 <body>
-  
-  <section class="page-section">
-    <div class="wrapper">
-      <a href="design-system.html">
-        <button class="button-primary">
-          <div class="button-container">
-            <span class="icon-smiley"></span> Viens mater les composants
-          </div>
-        </button>
-      </a>
-    </div>
-  </section>
 
+  <nav class="nav">
+    <div class="nav-wrapper wrapper">
+      <div class="nav-header">
+        <a href="" class="nav-header--link">
+          <div class="nav-header--logo"></div>
+        </a>
+        <div class="nav-header-hamburger" id="menuburger">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+      </div>
+      <div class="nav-container" id="menunavlist">
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="" class="nav-menu-item--link">Cours de vocabulaire</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="" class="nav-menu-item--link">Multi-exercices</a>
+          </li>
+          <li class="nav-menu-item nav-menu-dropdown" id="menudrop">
+            <span class="nav-menu-item--link">Tableaux</span>
+            <span class="icon-chevron-left" id="menudropicon"></span>
+            <ul class="nav-menu-dropdown-list" id="menudroplist">
+              <li class="nav-menu-dropdown-list-item"><a href="" class="nav-menu-dropdown-list-item--link">Les kana</a></li>
+              <li class="nav-menu-dropdown-list-item"><a href="" class="nav-menu-dropdown-list-item--link">Les nombres</a></li>
+              <li class="nav-menu-dropdown-list-item"><a href="" class="nav-menu-dropdown-list-item--link">L'heure</a></li>
+              <li class="nav-menu-dropdown-list-item"><a href="" class="nav-menu-dropdown-list-item--link">Les dates</a></li>
+              <li class="nav-menu-dropdown-list-item"><a href="" class="nav-menu-dropdown-list-item--link">Les particules</a></li>
+            </ul>
+          </li>
+          <li class="nav-menu-item">
+            <a href="" class="nav-menu-item--link">A propos</a>
+          </li>
+        </ul>
+        <div class="mode-dsk mode-dsk-toggle">
+          <div class="mode-toggle">
+            <span class="mode-dsk--sun icon-sun" title="Light mode"></span>
+            <span class="mode-dsk--moon icon-moon" title="Dark mode"></span>
+          </div>
+        </div>
+        <div class="mode-mob">
+          <span class="icon-sun"></span>
+          <label class="mode-mob-switch">
+            <input type="checkbox" class="mode-mob-switch--input">
+            <span class="mode-mob-switch--slider mode-mob-toggle" id="mode-mob-toggle"><span class="mode-mob-switch--slider--circle"></span></span>
+          </label>
+          <span class="icon-moon"></span>
+        </div>
+      </div> <!-- .nav-container -->
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="wrapper">
+      <h1 class="page-title">Le site compagnon d'apprentissage du japonais</h1>
+      <p class="regular-text">Bienvenue sur Kakikukeko, lorem ipsum dolor sit amet, consectetur adipiscing elit, <a href="">Julien Fontanier</a> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br>Bonne visite !</p>
+      <section class="page-section">
+        <div class="grid-2">
+          <div class="grid-item">
+            <div class="box-item">
+              <h2 class="secondary-heading flex-heading">
+                <span class="icon-bubble flex-heading--icon"></span>
+                Cours de vocabulaire
+              </h2>
+              <p class="box-item--text">Vous retrouverez ici tous les cours de vocabulaire, groupés par saison et ordre de sortie. Pour chaque cours, 5 types d’exercices différents vous permettent de vous entraîner à reconnaître et mémoriser les termes appris.</p>
+              <div class="subsection">
+                <a href="" class="button-primary">
+                  Voir les cours
+                </a>
+              </div>
+            </div>
+          </div> <!-- .grid-item -->
+          <div class="grid-item">
+            <div class="box-item">
+              <h2 class="secondary-heading flex-heading">
+                <span class="icon-flame flex-heading--icon"></span>
+                Quiz multi-exercices
+              </h2>
+              <p class="box-item--text">Réveillez le Sūpā-Saiyajin qui est en vous et faites-vous interroger sur plusieurs cours à la fois. Vous pouvez en combiner autant que vous voulez !</p>
+              <div class="subsection">
+                <a href="" class="button-primary">
+                  Relever le défi
+                </a>
+              </div>
+            </div>
+          </div> <!-- .grid-item -->
+          <div class="grid-item">
+            <div class="box-item">
+              <h2 class="secondary-heading flex-heading">
+                <span class="icon-table flex-heading--icon"></span>
+                Tableaux de révision
+              </h2>
+              <p class="box-item--text">Vous retrouverez ici des tableaux regroupant les notions essentielles de la langue japonaises, des kana à l’heure en passant par les particules.</p>
+              <div class="subsection">
+                <a href="" class="button-primary">
+                  Tous les tableaux
+                </a>
+              </div>
+            </div>
+          </div> <!-- .grid-item -->
+          <div class="grid-item">
+            <div class="box-item">
+              <h2 class="secondary-heading flex-heading">
+                <span class="icon-smiley flex-heading--icon"></span>
+                À propos du site
+              </h2>
+              <p class="box-item--text">(temporaire) Ce site a été créé bénévolement et avec amour dans le but d’aider quiconque souhaite apprendre ou réviser le japonais avec les cours de Julien Fontanier-sensei</p>
+              <div class="subsection">
+                <a href="" class="button-primary">
+                  En savoir plus
+                </a>
+              </div>
+            </div>
+          </div> <!-- .grid-item -->
+        </div>
+      </section>
+      <section class="page-section">
+        <div class="box-info">
+          <div class="accordion">
+            <div class="accordion-toggle">
+              <h3 class="box-info--heading">Dernières fonctionnalités</h3>
+              <span class="icon-chevron-left accordion-toggle--icon"></span>
+            </div>
+            <div class="accordion-content">
+              <ul class="box-info--text">
+                <li>blabla</li>
+                <li>yyyoooo</li>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga reprehenderit sunt debitis ipsam labore corrupti quasi eaque quam accusantium cupiditate?</li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, in?</li>
+                <li>caca</li>
+              </ul>
+            </div>
+          </div> <!-- .accordion -->
+        </div> <!-- .box-info -->
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-grid">
+        <div class="footer--logo"></div>
+        <div class="footer-copyright">&copy; 2019 - <script>document.write(new Date().getFullYear())</script> Kakikukeko</div>
+        <div class="footer-credits">
+          <p class="footer-credits--item">Programmation : <a href="mailto:flo.delmas@protonmail.com" target="_blank" class="footer-credits--item--link">Florian Delmas</a></p>
+          <p class="footer-credits--item">Design : <a href="http://petitchampi.me/fr" target="_blank" class="footer-credits--item--link">Esther Bauzou</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/darkmode.js"></script>
+  <script src="scripts/dropdown.js"></script>
+  <script src="scripts/accordion.js"></script>
+  <script src="scripts/nav-tabs.js"></script>
+  <script src="scripts/menu.js"></script>
 </body>
 </html>

@@ -1,7 +1,9 @@
 .accordion {
   &-toggle {
     display: flex;
+    gap: 10px;
     justify-content: space-between;
+    align-items: center;
     cursor: pointer;
     width: 100%;
     transition: 0.4s;

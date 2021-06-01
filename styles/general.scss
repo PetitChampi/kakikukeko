@@ -10,6 +10,15 @@ body {
   font-family: $base-ff, sans-serif;
 }
 
-p {
+a {
+  text-decoration: none;
+}
+
+p, ul {
   line-height: 160%;
+  a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: bold;
+  }
 }

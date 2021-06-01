@@ -18,11 +18,33 @@
   margin-top: 30px;
 }
 
+// ----- Grids
+.grid-2 {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 30px;
+  @media screen and (min-width: $mobile-breakpoint) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.grid-3 {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 30px;
+  @media screen and (min-width: $mobile-breakpoint) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media screen and (min-width: $tablet-breakpoint) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 // ----- Typography
 .page-title {
   font-size: 2.5rem;
   font-weight: bold;
   margin-top: 0;
+  line-height: 140%;
   @media screen and (min-width: $mobile-breakpoint) {
     font-size: 3rem;
   }
@@ -39,6 +61,7 @@
   font-size: 1.75rem;
   font-weight: bold;
   line-height: 140%;
+  margin: 0;
 }
 .item-heading {
   font-size: 1.75rem;
@@ -58,4 +81,14 @@
 .exercise-word {
   font-size: 3rem;
   font-weight: lighter;
+}
+.flex-heading {
+  display: flex;
+  align-items: center;
+  &--icon {
+    color: var(--color-primary-alt);
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 1.5em;
+  }
 }

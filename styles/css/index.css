@@ -58,10 +58,38 @@
   margin-top: 30px;
 }
 
+.grid-2 {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.grid-3 {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 892px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .page-title {
   font-size: 2.5rem;
   font-weight: bold;
   margin-top: 0;
+  line-height: 140%;
 }
 @media screen and (min-width: 768px) {
   .page-title {
@@ -82,6 +110,7 @@
   font-size: 1.75rem;
   font-weight: bold;
   line-height: 140%;
+  margin: 0;
 }
 
 .item-heading {
@@ -107,6 +136,17 @@
   font-weight: lighter;
 }
 
+.flex-heading {
+  display: flex;
+  align-items: center;
+}
+.flex-heading--icon {
+  color: var(--color-primary-alt);
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 1.5em;
+}
+
 * {
   transition: color ease 0.1s, background-color ease 0.2s;
   box-sizing: border-box;
@@ -120,8 +160,17 @@ body {
   font-family: "m plus rounded 1c", sans-serif;
 }
 
-p {
+a {
+  text-decoration: none;
+}
+
+p, ul {
   line-height: 160%;
+}
+p a, ul a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .nav {
@@ -264,6 +313,7 @@ p {
   padding: 20px 0;
   color: var(--color-text);
   text-decoration: none;
+  font-weight: 400;
   transition: color ease 0.2s;
 }
 .nav-menu-item--link:hover {
@@ -607,6 +657,7 @@ p {
   align-items: center;
 }
 .button-form, .button-primary, .button-secondary, .button-dropdown {
+  display: inline-block;
   cursor: pointer;
   border: none;
   padding: 10px 30px;
@@ -725,7 +776,7 @@ p {
   margin-bottom: 0;
 }
 .box-item {
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 20px;
   box-shadow: 0 4px 20px var(--color-shadow);
 }
@@ -735,7 +786,9 @@ p {
 
 .accordion-toggle {
   display: flex;
+  gap: 10px;
   justify-content: space-between;
+  align-items: center;
   cursor: pointer;
   width: 100%;
   transition: 0.4s;
