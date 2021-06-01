@@ -1,0 +1,44 @@
+.navtabs {
+  display: flex;
+  &-container {
+    display: inline-flex;
+    border: 2px solid var(--color-secondary);
+    border-radius: 10px;
+    overflow: hidden;
+    overflow-x: auto;
+    max-width: 100%;
+    font-size: 0;
+  }
+  &-tablink {
+    min-width: 130px;
+    display: inline-block;
+    cursor: pointer;
+    color: var(--color-text);
+    background-color: var(--color-body);
+    border: none;
+    border-right: 2px solid var(--color-secondary);
+    padding: 10px 30px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    transition: background-color ease .2s, color ease .2s;
+    &:last-child {
+      border-right: none;
+    }
+    &:hover {
+      background-color: var(--color-secondary-background);
+    }
+    &-active, &-active:hover {
+      background-color: var(--color-secondary);
+      color: var(--color-body);
+    }
+  }
+  &-content {
+    margin-top: 30px;
+    display: none;
+    &-active {
+      display: block;
+    }
+  }
+}

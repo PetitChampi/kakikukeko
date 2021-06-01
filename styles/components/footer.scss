@@ -1,0 +1,35 @@
+.footer {
+  background-color: var(--color-primary-background);
+  padding: 50px 0;
+  &-grid {
+    display: grid;
+    text-align: center;
+    @media screen and (min-width: $tablet-breakpoint) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  &--logo {
+    background: var(--logo-img-path) no-repeat left;
+    width: 200px;
+    height: 35px;
+    margin: 0 auto 50px;
+    @media screen and (min-width: $tablet-breakpoint) {
+      margin: -15px 0 0;
+    }
+  }
+  &-credits {
+    margin-top: 30px;
+    @media screen and (min-width: $tablet-breakpoint) {
+      margin: 0;
+      text-align: right;
+    }
+    &--item {
+      margin: 0;
+      &--link {
+        text-decoration: none;
+        color: var(--color-primary);
+        font-weight: bold;
+      }
+    }
+  }
+}

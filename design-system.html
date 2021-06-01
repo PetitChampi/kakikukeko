@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design System | Kakikukeko</title>
+  <link rel="stylesheet" href="styles/css/index.css">
+  <link rel="stylesheet" href="styles/css/iconfont.css">
+</head>
+<body>
+
+  <!-- menu  -->
+  <nav class="nav">
+    <div class="nav-wrapper wrapper">
+      <div class="nav-header">
+        <a href="" class="nav-header--link">
+          <div class="nav-header--logo"></div>
+        </a>
+        <div class="nav-header-hamburger" id="menuburger">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+      </div>
+      <div class="nav-container" id="menunavlist">
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="" class="nav-menu-item--link">Cours de vocabulaire</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="" class="nav-menu-item--link">Multi-exercices</a>
+          </li>
+          <li class="nav-menu-item nav-menu-dropdown" id="menudrop">
+            <span class="nav-menu-item--link">Tableaux</span>
+            <span class="icon-chevron-left" id="menudropicon"></span>
+            <ul class="nav-menu-dropdown-list" id="menudroplist">
+              <li class="nav-menu-dropdown-list-item"><a href="" class="nav-menu-dropdown-list-item--link">Les kana</a></li>
+              <li class="nav-menu-dropdown-list-item"><a href="" class="nav-menu-dropdown-list-item--link">Les nombres</a></li>
+              <li class="nav-menu-dropdown-list-item"><a href="" class="nav-menu-dropdown-list-item--link">L'heure</a></li>
+              <li class="nav-menu-dropdown-list-item"><a href="" class="nav-menu-dropdown-list-item--link">Les dates</a></li>
+              <li class="nav-menu-dropdown-list-item"><a href="" class="nav-menu-dropdown-list-item--link">Les particules</a></li>
+            </ul>
+          </li>
+          <li class="nav-menu-item">
+            <a href="" class="nav-menu-item--link">A propos</a>
+          </li>
+        </ul>
+        <div class="mode-dsk mode-dsk-toggle">
+          <div class="mode-toggle">
+            <span class="mode-dsk--sun icon-sun" title="Light mode"></span>
+            <span class="mode-dsk--moon icon-moon" title="Dark mode"></span>
+          </div>
+        </div>
+        <div class="mode-mob">
+          <span class="icon-sun"></span>
+          <label class="mode-mob-switch">
+            <input type="checkbox" class="mode-mob-switch--input">
+            <span class="mode-mob-switch--slider mode-mob-toggle" id="mode-mob-toggle"><span class="mode-mob-switch--slider--circle"></span></span>
+          </label>
+          <span class="icon-moon"></span>
+        </div>
+      </div> <!-- .nav-container -->
+    </div>
+  </nav>
+  
+  <main class="main">
+    <div class="wrapper">
+      
+      <!-- Typography -->
+      <p class="page-subtitle">Page subtitle</p>
+      <h1 class="page-title">Page title</h1>
+      <h2 class="secondary-heading">Secondary heading</h2>
+      <h3 class="item-heading">Item heading</h3>
+      <p class="regular-text">Regular text</p>
+      <span class="small-text">Small text</span>
+      <p class="exercise-word">Exercise word</p>
+  
+      <!-- Forms -->
+      <section class="page-section" style="max-width: 500px;">
+  
+        <div class="form">
+          <label for="textInput" class="form-label">Form input</label>
+          <input type="text" name="textInput" class="form-input">
+        </div>
+        <div class="subsection">
+          <label for="select" class="form-label">Select</label>
+          <div class="form-select">
+            <select name="select" id="exampleSelect" class="form-select--list">
+              <option value="option1">Vous savez</option>
+              <option value="option2">Moi je ne pense pas</option>
+              <option value="option3">Qu'il y aie de bonne</option>
+              <option value="option4">Ou de mauvaise</option>
+              <option value="option5">Situation</option>
+            </select>
+            <span class="icon-chevron-left form-select--chevron"></span>
+          </div>
+        </div>
+  
+        <div class="subsection" style="display:flex;">
+          <div style="flex-basis:50%; display:flex; flex-direction:column; align-items:flex-start;">
+            <label class="check-container">Checkbox
+              <input type="checkbox" checked="checked" class="check-container--checkbox">
+              <span class="check-container--checkmark"></span>
+            </label>
+            <br>
+            <label class="check-container">Pastabox
+              <input type="checkbox" class="check-container--checkbox">
+              <span class="check-container--checkmark"></span>
+            </label>
+          </div>
+          <div style="flex-basis:50%; display:flex; flex-direction:column; align-items:flex-start;">
+            <label class="check-container">Radio
+              <input type="radio" checked="checked" class="check-container--radio" name="radiogroup">
+              <span class="check-container--radiomark"></span>
+            </label>
+            <br>
+            <label class="check-container">Radibas
+              <input type="radio" class="check-container--radio" name="radiogroup">
+              <span class="check-container--radiomark"></span>
+            </label>
+          </div>
+        </div>
+  
+        <div class="subsection">
+          <div class="form-feedback">
+            <p class="form-feedback--heading">Form feedback</p>
+            <div class="form-feedback-results">
+              <div class="form-feedback-results--item">
+                <span class="icon-check"></span> : 0
+              </div>
+              <div class="form-feedback-results--item">
+                <span class="icon-cross"></span> : 0
+              </div>
+            </div>
+            <p class="form-feedback--helptext">Bones réponses uniques : 0/20</p>
+          </div>
+        </div> <!-- .subsection -->
+  
+      </section>
+      
+      <!-- Buttons -->
+      <section class="page-section">
+        <div style="display: flex; gap: 20px; margin-bottom: 10px;">
+          <button class="button-form">Form button</button>
+          <div class="dropdown-container">
+            <button class="button-dropdown">
+              Dropdown <span class="icon-chevron-left"></span>
+            </button>
+            <div class="button-dropdown-content">
+              <a href="#" class="button-dropdown-content--item">Naruto</a>
+              <a href="#" class="button-dropdown-content--item">Sasuke</a>
+              <a href="#" class="button-dropdown-content--item">Kakashi</a>
+            </div>
+          </div> <!-- .dropdown-container -->
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <button class="button-primary">
+            <div class="button-inner-container">
+              <span class="icon-chevron-left"></span> Primary
+            </div>
+          </button>
+          <button class="button-secondary">
+            <div class="button-inner-container">
+              <span class="icon-file"></span> Secondary
+            </div>
+          </button>
+        </div>
+      </section>
+  
+      <!-- Boxes -->
+      <section class="page-section">
+        <div class="box-info">
+          <h3 class="box-info--heading">Info box</h3>
+          <p class="box-info--text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic maiores non mollitia, iure et ab inventore perspiciatis fugit repudiandae quidem ex autem ad aliquid ratione, molestias nulla tenetur illum?</p>
+        </div>
+        <div class="subsection" style="max-width: 500px;">
+          <div class="box-item">
+            <h3 class="item-heading">Box item</h3>
+            <p class="box-item--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda possimus laudantium quisquam eaque culpa nobis quidem eos optio sint, non dolorem deserunt sit commodi sed! Facere sunt praesentium quasi.</p>
+          </div>
+        </div>
+        <div class="subsection">
+          <div class="box-info">
+            <div class="accordion">
+              <div class="accordion-toggle">
+                <h3 class="box-info--heading">Accordion</h3>
+                <span class="icon-chevron-left accordion-toggle--icon"></span>
+              </div>
+              <div class="accordion-content">
+                <p class="box-info--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia molestias, et nemo adipisci minus ipsam delectus repudiandae quibusdam ex nostrum, ipsum necessitatibus deserunt provident asperiores eum culpa quasi tempora sapiente quas a omnis perferendis aperiam. Dolore veniam laudantium laboriosam magni dignissimos quasi? Minus reprehenderit error consequuntur eius tempore sed qui.</p>
+              </div>
+            </div> <!-- .accordion -->
+          </div> <!-- .box-info -->
+        </div>
+        <div class="subsection">
+          <div class="navtabs-container">
+            <div class="navtabs">
+              <button class="navtabs-tablink navtabs-tablink-active">Nav tabs</button>
+              <button class="navtabs-tablink">Goku</button>
+              <button class="navtabs-tablink">Vegeta</button>
+            </div>
+          </div> <!-- .navtabs-container -->
+          <div class="navtabs-content navtabs-content-active box-item" id="Tab1">
+            <h3 class="item-heading">Tab content</h3>
+            <p class="box-item--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam assumenda possimus laudantium quisquam eaque culpa nobis quidem eos optio sint, non dolorem deserunt sit commodi sed! Facere sunt praesentium quasi.</p>
+          </div>
+          <div class="navtabs-content box-item" id="Tab2">
+            <h3 class="item-heading">Goku</h3>
+            <p class="box-item--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil numquam ex eos nobis saepe totam adipisci, odit distinctio nulla iste, aperiam veniam, veritatis odio ad eius cum? Vel, debitis.</p>
+          </div>
+          <div class="navtabs-content box-item" id="Tab3">
+            <h3 class="item-heading">Vegeta</h3>
+            <p class="box-item--text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum totam amet corporis fuga optio suscipit necessitatibus maiores. Recusandae fugit ducimus odio maxime nobis iusto, aperiam alias natus officiis nisi cumque.</p>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Icons -->
+      <div style="margin:100px 0; font-size:30px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; text-align: center; max-width: 500px;">
+  
+        <span class="icon-hash"></span>
+        <span class="icon-table"></span>
+        <span class="icon-smiley"></span>
+        <span class="icon-bubble"></span>
+        <span class="icon-check"></span>
+        <span class="icon-cross"></span>
+        <span class="icon-file"></span>
+        <span class="icon-shuffle"></span>
+        <span class="icon-clock"></span>
+        <span class="icon-calendar"></span>
+        <span class="icon-moon"></span>
+        <span class="icon-sun"></span>
+        <span class="icon-chevron-left"></span>
+        <span class="icon-flame"></span>
+        <span class="icon-kana-a"></span>
+        <span class="icon-kana-wa"></span>
+  
+      </div>
+
+      <!-- multiselect -->
+      <section class="page-section">
+        <div class="multiselect">
+          <div class="multiselect-item">
+            <span class="multiselect-item--label s1">S1</span>
+            <span class="multiselect-item--title">Premiers mots en kanji</span>
+          </div>
+          <div class="multiselect-item">
+            <span class="multiselect-item--label s1">S1</span>
+            <span class="multiselect-item--title">Les formules de politesse</span>
+          </div>
+          <div class="multiselect-item">
+            <span class="multiselect-item--label s1">S1</span>
+            <span class="multiselect-item--title">Le matériel domestique</span>
+          </div>
+          <div class="multiselect-item">
+            <span class="multiselect-item--label s1">S1</span>
+            <span class="multiselect-item--title">Le nom des pays</span>
+          </div>
+          <div class="multiselect-item">
+            <span class="multiselect-item--label s1">S1</span>
+            <span class="multiselect-item--title">Les animaux domestiques</span>
+          </div>
+          <div class="multiselect-item">
+            <span class="multiselect-item--label s1">S1</span>
+            <span class="multiselect-item--title">Les membres de la famille</span>
+          </div>
+          <div class="multiselect-item">
+            <span class="multiselect-item--label s1">S1</span>
+            <span class="multiselect-item--title">Les jours de la semaine et le système solaire</span>
+          </div>
+          <div class="multiselect-item">
+            <span class="multiselect-item--label s2">S2</span>
+            <span class="multiselect-item--title">Les monstres d'Halloween</span>
+          </div>
+          <div class="multiselect-item">
+            <span class="multiselect-item--label s1">S1</span>
+            <span class="multiselect-item--title">Le numéro des jours</span>
+          </div>
+          <div class="multiselect-item">
+            <span class="multiselect-item--label s2">S2</span>
+            <span class="multiselect-item--title">Le réveillon de Noël</span>
+          </div>
+          <div class="multiselect-item">
+            <span class="multiselect-item--label s2">S2</span>
+            <span class="multiselect-item--title">Les vêtements du quotidien</span>
+          </div>
+          <div class="multiselect-item">
+            <span class="multiselect-item--label s2">S2</span>
+            <span class="multiselect-item--title">Les aliments de base</span>
+          </div>
+          <div class="multiselect-item">
+            <span class="multiselect-item--label s2">S2</span>
+            <span class="multiselect-item--title">Les fruits du monde</span>
+          </div>
+          <div class="multiselect-item">
+            <span class="multiselect-item--label s2">S2</span>
+            <span class="multiselect-item--title">La carte du Japon</span>
+          </div>
+          <div class="multiselect-item">
+            <span class="multiselect-item--label s2">S2</span>
+            <span class="multiselect-item--title">Les animaux sauvages</span>
+          </div>
+          <div class="multiselect-item">
+            <span class="multiselect-item--label s2">S2</span>
+            <span class="multiselect-item--title">Les fruits du monde</span>
+          </div>
+          <div class="multiselect-item">
+            <span class="multiselect-item--label bonus">Bonus</span>
+            <span class="multiselect-item--title">Le complément de temps</span>
+          </div>
+          <div class="multiselect-item">
+            <span class="multiselect-item--label s2">S2</span>
+            <span class="multiselect-item--title">Les insectes et les reptiles</span>
+          </div>
+          <div class="multiselect-item">
+            <span class="multiselect-item--label s2">S2</span>
+            <span class="multiselect-item--title">Les connecteurs logiques japonais</span>
+          </div>
+          <div class="multiselect-item">
+            <span class="multiselect-item--label bonus">Bonus</span>
+            <span class="multiselect-item--title">Vocabulaire supplémentaire (tous les cours)</span>
+          </div>
+        </div>
+        <script>
+          let thingo = document.getElementsByClassName("multiselect-item")
+          Object.keys(thingo).forEach((i) => {
+            thingo[i].addEventListener('click', () => {
+              thingo[i].classList.toggle("active")
+            })
+          })
+        </script>
+      </section>
+  
+      <!-- Table -->
+
+      <section class="page-section">
+        <div class="subsection">
+          <div class="tcontainer box-item">
+            <div class="tcontainer-header">
+              <h3 class="tcontainer-header--title">Vocabulaire du cours</h3>
+              <div class="tcontainer-header-controls">
+                <div class="dropdown-container">
+                  <button class="button-dropdown">
+                    Colonnes affichées <span class="icon-chevron-left"></span>
+                  </button>
+                  <div class="button-dropdown-content">
+                    <div class="button-dropdown-content--item">
+                      <label class="check-container">Castor
+                        <input type="checkbox" checked="checked" class="check-container--checkbox">
+                        <span class="check-container--checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="button-dropdown-content--item">
+                      <label class="check-container">Ornithorynque
+                        <input type="checkbox" class="check-container--checkbox">
+                        <span class="check-container--checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="button-dropdown-content--item">
+                      <label class="check-container">Chat persan
+                        <input type="checkbox" class="check-container--checkbox">
+                        <span class="check-container--checkmark"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tcontainer-header-controls--icon" title="Shuffle !">
+                  <span class="icon-shuffle"></span>
+                </div>
+              </div>
+            </div>
+            <div class="tcontainer-table">
+              <table>
+                <tr class="sep-bottom">
+                  <th>Nombre</th>
+                  <th>Kanji</th>
+                  <th>Lecture la plus courante</th>
+                  <th>Lecture purement japonaise</th>
+                  <th>Lecture sino-japonaise</th>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>一</td>
+                  <td>ICHI</td>
+                  <td>hito</td>
+                  <td>ICHI</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>二</td>
+                  <td>NI</td>
+                  <td>futa</td>
+                  <td>NI</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>三</td>
+                  <td>SAN</td>
+                  <td>mi</td>
+                  <td>SAN</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>四</td>
+                  <td>yon</td>
+                  <td>yo</td>
+                  <td>SHI</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>五</td>
+                  <td>GO</td>
+                  <td>itsu</td>
+                  <td>GO</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>六</td>
+                  <td>ROKU</td>
+                  <td>mu</td>
+                  <td>ROKU</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>七</td>
+                  <td>nana</td>
+                  <td>nana</td>
+                  <td>SHICHI</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>八</td>
+                  <td>HACHI</td>
+                  <td>ya</td>
+                  <td>HACHI</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>九</td>
+                  <td>KYÛ</td>
+                  <td>kokono</td>
+                  <td>KU</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>十</td>
+                  <td>JÛ</td>
+                  <td>too</td>
+                  <td>JU</td>
+                </tr>
+              </table>
+            </div>
+          </div> <!-- .tcontainer -->
+        </div> <!-- .subsection -->
+  
+        <div class="subsection">
+          <div class="tcontainer box-item">
+            <div class="tcontainer-header">
+              <h3 class="tcontainer-header--title">Les particules fondamentales</h3>
+            </div>
+            <div class="tcontainer-table">
+              <table>
+                <tr class="sep-bottom">
+                  <th>Particule</th>
+                  <th>Prononciation</th>
+                  <th>Rôle</th>
+                  <th>Exemple</th>
+                  <th>Remarque(s)</th>
+                </tr>
+                <tbody>
+                  <tr>
+                    <td>の</td>
+                    <td>no</td>
+                    <td>La possession</td>
+                    <td>リンクの馬だ (C'est le cheval de Link)</td>
+                    <td>possesseurのpossédé</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr class="tr-combo">
+                    <td rowspan="2">と</td>
+                    <td rowspan="2">to</td>
+                    <td>L'énumération</td>
+                    <td>マリオとルイージ (Mario et Luigi)</td>
+                    <td></td>
+                  </tr>
+                  <tr class="tr-combo">
+                    <td>"Avec" (avec quelqu'un...)</td>
+                    <td>猫と (Avec un chat)</td>
+                    <td>Utilisable qu'avec des êtres vivants</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td>や</td>
+                    <td>ya</td>
+                    <td>L'énumération non-exhaustive</td>
+                    <td>マリオやルイージやピーチだ (Ce sont entre autres Mario, Luigi et Peach)</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td>は</td>
+                    <td>wa</td>
+                    <td>Le thème de la phrase</td>
+                    <td>リンクは男だ (En ce qui concerne Link, c'est un homme)</td>
+                    <td>En début de phrase. Ce n'est pas le sujet du verbe !<br>Est une particule d'emphase</td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr class="tr-combo">
+                    <td rowspan="4">に</td>
+                    <td rowspan="4">ni</td>
+                    <td>Le lieu dans lequel il ne se passe rien</td>
+                    <td>ナルトはラーメンのレストランにいる (Naruto est au restaurant de ramen)</td>
+                    <td>A utiliser avec un verbe de présence</td>
+                  </tr>
+                  <tr class="tr-combo">
+                    <td>Le point d'arrivée d'un déplacement</td>
+                    <td>ピッコロはナメック星に戻る (Piccolo retourne sur la planète Namek)</td>
+                    <td></td>
+                  </tr>
+                  <tr class="tr-combo">
+                    <td>Le Complément d'Objet Indirect (COI)</td>
+                    <td>ブルマはヤムチャにカプセルを売る (Bulma vend des capsules à Yamcha</td>
+                    <td></td>
+                  </tr>
+                  <tr class="tr-combo">
+                    <td>Le complément de temps (absolu)</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr class="tr-combo">
+                    <td rowspan="2">で</td>
+                    <td rowspan="2">de</td>
+                    <td>Le lieu dans lequel il se passe quelque chose</td>
+                    <td>カカシは公園で寝る (Kakashi dort dans le parc)</td>
+                    <td>A utiliser avec un verbe d'action</td>
+                  </tr>
+                  <tr class="tr-combo">
+                    <td>Le moyen</td>
+                    <td>サクラはバスで来る (Sakura vient en bus)</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+                <tbody>
+                  <tr>
+                    <td>へ</td>
+                    <td>e</td>
+                    <td>La direction</td>
+                    <td>孫悟空はレストランへ行く (Son Goku va en direction du restaurant)</td>
+                    <td>A utiliser avec un verbe de mouvement directionnel</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div> <!-- .tcontainer -->
+        </div> <!-- .subsection -->
+      </section>
+  
+    </div> <!-- .wrapper -->
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-grid">
+        <div class="footer--logo"></div>
+        <div class="footer-copyright">&copy; 2019 - <script>document.write(new Date().getFullYear())</script> Kakikukeko</div>
+        <div class="footer-credits">
+          <p class="footer-credits--item">Programmation : <a href="mailto:flo.delmas@protonmail.com" target="_blank" class="footer-credits--item--link">Florian Delmas</a></p>
+          <p class="footer-credits--item">Design : <a href="http://petitchampi.me/fr" target="_blank" class="footer-credits--item--link">Esther Bauzou</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="scripts/darkmode.js"></script>
+  <script src="scripts/dropdown.js"></script>
+  <script src="scripts/accordion.js"></script>
+  <script src="scripts/nav-tabs.js"></script>
+  <script src="scripts/menu.js"></script>
+</body>
+</html>

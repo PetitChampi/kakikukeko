@@ -1,0 +1,48 @@
+// watch command:
+// sass --watch styles/index.scss:styles/css/index.css
+
+// ----- colors
+:root {
+  --color-body: #fff;
+  --color-text: #424242;
+  --color-primary: #C5A858;
+  --color-primary-alt: #edca70;
+  --color-primary-background: rgba(237, 202, 112, .2);
+  --color-secondary: #3B96B8;
+  --color-secondary-background: rgba(59, 150, 184, .2);
+  --color-gray-background: rgba(0,0,0,.05);
+  --color-subtitles: rgba(0,0,0,.4);
+  --color-shadow: rgba(0,0,0,.2);
+  --color-green: #549245;
+  --color-red: #a94e54;
+  --color-table-borders: #d7d7d7;
+  --logo-img-path: url("../../assets/img/kakikukeko-logo-lightmode.svg");
+}
+
+.darkmode {
+  --color-body: #424242;
+  --color-text: #fff;
+  --color-primary: #edca70;
+  --color-primary-alt: #C5A858;
+  --color-primary-background: rgba(197, 168, 88, .2);
+  --color-secondary: #A1E1FB;
+  --color-secondary-background: rgba(161, 225, 251, .2);
+  --color-gray-background: rgba(255,255,255,.2);
+  --color-subtitles: rgba(255,255,255,.6);
+  --color-shadow: rgba(255,255,255,.3);
+  --color-green: #97C38C;
+  --color-red: #E5A0A4;
+  --color-table-borders: #acacac;
+  --logo-img-path: url("../../assets/img/kakikukeko-logo-darkmode.svg");
+}
+
+// ----- typography
+$base-ff: 'm plus rounded 1c';
+
+// ----- spacing
+$standard-padding: 20px;
+$layout-grid-gap: 10px;
+
+// ----- breakpoints
+$mobile-breakpoint: 768px;
+$tablet-breakpoint: 892px;

@@ -1,0 +1,15 @@
+* {
+  transition: color ease .1s, background-color ease .2s;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-body);
+  color: var(--color-text);
+  font-family: $base-ff, sans-serif;
+}
+
+p {
+  line-height: 160%;
+}

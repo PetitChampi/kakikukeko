@@ -1,0 +1,61 @@
+// ----- wrappers & sections
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 $standard-padding;
+}
+.main {
+  padding: 50px 0;
+  margin-top: 60px;
+  @media screen and (min-width: $mobile-breakpoint) {
+    margin-top: 75px;
+  }
+}
+.page-section {
+  margin-top: 50px;
+}
+.subsection {
+  margin-top: 30px;
+}
+
+// ----- Typography
+.page-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 0;
+  @media screen and (min-width: $mobile-breakpoint) {
+    font-size: 3rem;
+  }
+}
+.page-subtitle {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  color: var(--color-subtitles);
+}
+.secondary-heading {
+  font-size: 1.75rem;
+  font-weight: bold;
+  line-height: 140%;
+}
+.item-heading {
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 140%;
+  margin: 0;
+}
+.regular-text {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 160%;
+}
+.small-text {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.exercise-word {
+  font-size: 3rem;
+  font-weight: lighter;
+}

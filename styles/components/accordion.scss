@@ -1,0 +1,33 @@
+.accordion {
+  &-toggle {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.4s;
+    &--icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      font-size: .8rem;
+      border: 2px solid var(--color-text);
+      border-radius: 50%;
+      transform: rotate(-90deg);
+      padding: 2px 2px 0 0;
+      transition: .2s;
+    }
+  }
+  &-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  &-show {
+    min-height: 100px;
+  }
+  &-icon-rotate {
+    transform: rotate(90deg);
+  }
+}

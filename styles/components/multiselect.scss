@@ -1,0 +1,46 @@
+.multiselect {
+  display: grid;
+  gap: 10px;
+  @media screen and (min-width: $mobile-breakpoint) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &-item {
+    border: 1px solid var(--color-text);
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    &--label {
+      display: inline-block;
+      height: 100%;
+      font-weight: bold;
+      font-size: .8rem;
+      text-transform: uppercase;
+      line-height: 200%;
+      letter-spacing: .1rem;
+      padding: 8px 10px;
+      &.s1 {
+        background-color: var(--color-primary-alt);
+      }
+      &.s2 {
+        background-color: var(--color-primary);
+        color: var(--color-body);
+      }
+      &.bonus {
+        background-color: var(--color-primary-background);
+      }
+    }
+    &--title {
+      display: inline-block;
+      padding: 8px 10px;
+    }
+    &.active {
+      background-color: var(--color-green);
+      color: var(--color-body);
+      .multiselect-item--label {
+        background-color: var(--color-body);
+        color: var(--color-text);
+      }
+    }
+  }
+}
