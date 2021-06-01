@@ -1,4 +1,4 @@
-// ----- wrappers & sections
+// ----- layout
 .wrapper {
   max-width: 1200px;
   margin: auto;
@@ -17,8 +17,6 @@
 .subsection {
   margin-top: 30px;
 }
-
-// ----- Grids
 .grid-2 {
   display: grid;
   column-gap: 20px;
@@ -44,7 +42,7 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin-top: 0;
-  line-height: 140%;
+  line-height: 130%;
   @media screen and (min-width: $mobile-breakpoint) {
     font-size: 3rem;
   }
@@ -91,4 +89,14 @@
     margin-right: 20px;
     font-size: 1.5em;
   }
+}
+
+// ----- Other
+.logo {
+  width: 50px;
+  height: 35px;
+  background: var(--logo-img-path) no-repeat center;
+  background-size: contain;
+  width: 200px;
+  margin-bottom: 10px;
 }
