@@ -666,6 +666,7 @@ p a, ul a {
 .button-inner-container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .button-form, .button-primary, .button-secondary, .button-dropdown {
   display: inline-block;
@@ -790,6 +791,7 @@ p a, ul a {
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 4px 20px var(--color-shadow);
+  overflow: hidden;
 }
 .box-item--text {
   margin-bottom: 0;
@@ -1000,6 +1002,53 @@ p a, ul a {
 .multiselect-item.active .multiselect-item--label {
   background-color: var(--color-body);
   color: var(--color-text);
+}
+
+.lessonbox-video {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+.lessonbox-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.lessonbox-button {
+  display: block;
+}
+.lessonbox-exobutton {
+  display: block;
+  padding: 10px;
+  margin-top: 15px;
+  font-weight: normal;
+}
+.lessonbox-exobutton--number {
+  background-color: var(--color-body);
+  color: var(--color-primary);
+  border-radius: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  font-weight: bold;
+}
+.lessonbox-accordion {
+  margin: 30px -20px -20px;
+  background-color: var(--color-primary-background);
+  padding: 15px 20px;
+}
+.lessonbox-accordion-content {
+  margin: 30px 0 10px;
 }
 
 /*# sourceMappingURL=index.css.map */
