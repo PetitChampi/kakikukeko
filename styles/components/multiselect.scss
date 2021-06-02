@@ -1,6 +1,7 @@
 .multiselect {
   display: grid;
   gap: 10px;
+  margin-top: 20px;
   @media screen and (min-width: $mobile-breakpoint) {
     grid-template-columns: repeat(2, 1fr);
   }

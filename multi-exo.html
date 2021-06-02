@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil | Kakikukeko</title>
+  <link rel="stylesheet" href="styles/css/index.css">
+  <link rel="stylesheet" href="styles/css/iconfont.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-wrapper wrapper">
+      <div class="nav-header">
+        <a href="index.html" class="nav-header--link">
+          <div class="nav-header--logo"></div>
+        </a>
+        <div class="nav-header-hamburger" id="menuburger">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+      </div>
+      <div class="nav-container" id="menunavlist">
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="vocabulaire.html" class="nav-menu-item--link">Cours de vocabulaire</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="multi-exo.html" class="nav-menu-item--link">Multi-exercices</a>
+          </li>
+          <li class="nav-menu-item nav-menu-dropdown" id="menudrop">
+            <span class="nav-menu-item--link">Tableaux</span>
+            <span class="icon-chevron-left" id="menudropicon"></span>
+            <ul class="nav-menu-dropdown-list" id="menudroplist">
+              <li class="nav-menu-dropdown-list-item"><a href="tableaux/kana.html" class="nav-menu-dropdown-list-item--link">Les kana</a></li>
+              <li class="nav-menu-dropdown-list-item"><a href="tableaux/nombres.html" class="nav-menu-dropdown-list-item--link">Les nombres</a></li>
+              <li class="nav-menu-dropdown-list-item"><a href="tableaux/heure.html" class="nav-menu-dropdown-list-item--link">L'heure</a></li>
+              <li class="nav-menu-dropdown-list-item"><a href="tableaux/dates.html" class="nav-menu-dropdown-list-item--link">Les dates</a></li>
+              <li class="nav-menu-dropdown-list-item"><a href="tableaux/particules.html" class="nav-menu-dropdown-list-item--link">Les particules</a></li>
+            </ul>
+          </li>
+          <li class="nav-menu-item">
+            <a href="a-propos.html" class="nav-menu-item--link">A propos</a>
+          </li>
+        </ul>
+        <div class="mode-dsk mode-dsk-toggle">
+          <div class="mode-toggle">
+            <span class="mode-dsk--sun icon-sun" title="Light mode"></span>
+            <span class="mode-dsk--moon icon-moon" title="Dark mode"></span>
+          </div>
+        </div>
+        <div class="mode-mob">
+          <span class="icon-sun"></span>
+          <label class="mode-mob-switch">
+            <input type="checkbox" class="mode-mob-switch--input">
+            <span class="mode-mob-switch--slider mode-mob-toggle" id="mode-mob-toggle"><span class="mode-mob-switch--slider--circle"></span></span>
+          </label>
+          <span class="icon-moon"></span>
+        </div>
+      </div> <!-- .nav-container -->
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="wrapper">
+      <h1 class="page-title">Quiz mutli-exercices</h1>
+      <p class="regular-text">Félicitations ! Tu as débloqué le mode sūpā saiya-jin.</p>
+      <p class="regular-text">Avec cette transformation, tu peux maintenant faire les mêmes exercices que précédemment, mais en combinant les cours sur lesquels tu veux être interrogé !
+      </p>
+      <section class="page-section">
+        <h2 class="secondary-heading">Sélectionne les cours :</h2>
+        <div class="subsection">
+          <label class="check-container">Sélectionner tout
+            <input type="checkbox" class="check-container--checkbox">
+            <span class="check-container--checkmark"></span>
+          </label>
+          <div class="multiselect">
+            <div class="multiselect-item">
+              <span class="multiselect-item--label s1">S1</span>
+              <span class="multiselect-item--title">Premiers mots en kanji</span>
+            </div>
+            <div class="multiselect-item">
+              <span class="multiselect-item--label s1">S1</span>
+              <span class="multiselect-item--title">Les formules de politesse</span>
+            </div>
+            <div class="multiselect-item">
+              <span class="multiselect-item--label s1">S1</span>
+              <span class="multiselect-item--title">Le matériel domestique</span>
+            </div>
+            <div class="multiselect-item">
+              <span class="multiselect-item--label s1">S1</span>
+              <span class="multiselect-item--title">Le nom des pays</span>
+            </div>
+            <div class="multiselect-item">
+              <span class="multiselect-item--label s1">S1</span>
+              <span class="multiselect-item--title">Les animaux domestiques</span>
+            </div>
+            <div class="multiselect-item">
+              <span class="multiselect-item--label s1">S1</span>
+              <span class="multiselect-item--title">Les membres de la famille</span>
+            </div>
+            <div class="multiselect-item">
+              <span class="multiselect-item--label s1">S1</span>
+              <span class="multiselect-item--title">Les jours de la semaine et le système solaire</span>
+            </div>
+            <div class="multiselect-item">
+              <span class="multiselect-item--label s2">S2</span>
+              <span class="multiselect-item--title">Les monstres d'Halloween</span>
+            </div>
+            <div class="multiselect-item">
+              <span class="multiselect-item--label s1">S1</span>
+              <span class="multiselect-item--title">Le numéro des jours</span>
+            </div>
+            <div class="multiselect-item">
+              <span class="multiselect-item--label s2">S2</span>
+              <span class="multiselect-item--title">Le réveillon de Noël</span>
+            </div>
+            <div class="multiselect-item">
+              <span class="multiselect-item--label s2">S2</span>
+              <span class="multiselect-item--title">Les vêtements du quotidien</span>
+            </div>
+            <div class="multiselect-item">
+              <span class="multiselect-item--label s2">S2</span>
+              <span class="multiselect-item--title">Les aliments de base</span>
+            </div>
+            <div class="multiselect-item">
+              <span class="multiselect-item--label s2">S2</span>
+              <span class="multiselect-item--title">Les fruits du monde</span>
+            </div>
+            <div class="multiselect-item">
+              <span class="multiselect-item--label s2">S2</span>
+              <span class="multiselect-item--title">La carte du Japon</span>
+            </div>
+            <div class="multiselect-item">
+              <span class="multiselect-item--label s2">S2</span>
+              <span class="multiselect-item--title">Les animaux sauvages</span>
+            </div>
+            <div class="multiselect-item">
+              <span class="multiselect-item--label s2">S2</span>
+              <span class="multiselect-item--title">Les fruits du monde</span>
+            </div>
+            <div class="multiselect-item">
+              <span class="multiselect-item--label bonus">Bonus</span>
+              <span class="multiselect-item--title">Le complément de temps</span>
+            </div>
+            <div class="multiselect-item">
+              <span class="multiselect-item--label s2">S2</span>
+              <span class="multiselect-item--title">Les insectes et les reptiles</span>
+            </div>
+            <div class="multiselect-item">
+              <span class="multiselect-item--label s2">S2</span>
+              <span class="multiselect-item--title">Les connecteurs logiques japonais</span>
+            </div>
+            <div class="multiselect-item">
+              <span class="multiselect-item--label bonus">Bonus</span>
+              <span class="multiselect-item--title">Vocabulaire supplémentaire (tous les cours)</span>
+            </div>
+          </div> <!-- .multiselect -->
+        </div>
+      </section>
+      <section class="page-section">
+        <h2 class="secondary-heading">Sélectionne le type d'exercice</h2>
+        <div class="subsection">
+          <div>
+            <label class="check-container">Français 	&rarr; rōmaji (écrit)
+              <input type="radio" class="check-container--radio" name="exotype">
+              <span class="check-container--radiomark"></span>
+            </label>
+          </div>
+          <div>
+            <label class="check-container">Japonais 	&rarr; français (écrit)
+              <input type="radio" class="check-container--radio" name="exotype">
+              <span class="check-container--radiomark"></span>
+            </label>
+          </div>
+          <div>
+            <label class="check-container">Japonais 	&rarr; français (QCM)
+              <input type="radio" class="check-container--radio" name="exotype">
+              <span class="check-container--radiomark"></span>
+            </label>
+          </div>
+          <div>
+            <label class="check-container">Français 	&rarr; japonais (écrit)
+              <input type="radio" class="check-container--radio" name="exotype">
+              <span class="check-container--radiomark"></span>
+            </label>
+          </div>
+          <div>
+            <label class="check-container">Français 	&rarr; japonais (QCM)
+              <input type="radio" class="check-container--radio" name="exotype">
+              <span class="check-container--radiomark"></span>
+            </label>
+          </div>
+        </div>
+        <div class="subsection" style="text-align: center;">
+          <a href="" class="button-form">Let's go !</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-grid">
+        <div class="footer--logo"></div>
+        <div class="footer-copyright">&copy; 2019 - <script>document.write(new Date().getFullYear())</script> Kakikukeko</div>
+        <div class="footer-credits">
+          <p class="footer-credits--item">Programmation : <a href="mailto:flo.delmas@protonmail.com" target="_blank" class="footer-credits--item--link">Florian Delmas</a></p>
+          <p class="footer-credits--item">Design : <a href="http://petitchampi.me/fr" target="_blank" class="footer-credits--item--link">Esther Bauzou</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/darkmode.js"></script>
+  <script src="scripts/dropdown.js"></script>
+  <script src="scripts/accordion.js"></script>
+  <script src="scripts/nav-tabs.js"></script>
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/multiselect.js"></script>
+
+</body>
+</html>
