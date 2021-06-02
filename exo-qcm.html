@@ -80,13 +80,28 @@
         </div>
       </section>
       <section class="page-section">
-        <h2 class="secondary-heading centered">Écris en rōmaji :</h2>
-        <span class="exercise-word">Le ciel</span>
+        <h2 class="secondary-heading centered">Choisis en français :</h2>
+        <span class="exercise-word">水</span>
         <div class="grid-2">
           <div class="grid-item">
             <div class="form">
-              <label for="textInput" class="form-label">Rōmaji</label>
-              <input type="text" name="textInput" class="form-input">
+              <label for="select" class="form-label">Traduction</label>
+              <div class="form-select">
+                <select name="select" id="exampleSelect" class="form-select--list">
+                  <option hidden disabled selected value></option>
+                  <option value="option2">Le vent</option>
+                  <option value="option3">Le feu</option>
+                  <option value="option4">L'eau</option>
+                  <option value="option5">La rivière</option>
+                </select>
+                <span class="icon-chevron-left form-select--chevron"></span>
+              </div>
+              <div class="check">
+                <label class="check-container">Mélanger les choix
+                  <input type="checkbox" class="check-container--checkbox">
+                  <span class="check-container--checkmark"></span>
+                </label>
+              </div>
             </div>
             <div class="subsection centered">
               <a href="" class="button-form">Valider</a>

@@ -43,6 +43,10 @@
   display: flex;
   gap: 10px;
   justify-content: space-between;
+  @media screen and (min-width: $mobile-breakpoint) {
+    gap: 20px;
+    justify-content: flex-start;
+  }
 }
 
 // ----- Typography
