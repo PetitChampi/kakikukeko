@@ -126,6 +126,16 @@
   }
 }
 
+.centered {
+  text-align: center;
+}
+
+.justiflex {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
 .page-title {
   font-size: 2.5rem;
   font-weight: bold;
@@ -175,6 +185,9 @@
 .exercise-word {
   font-size: 3rem;
   font-weight: 300;
+  display: block;
+  text-align: center;
+  margin: 40px 0;
 }
 
 .flex-heading {

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil | Kakikukeko</title>
+  <link rel="stylesheet" href="styles/css/index.css">
+  <link rel="stylesheet" href="styles/css/iconfont.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-wrapper wrapper">
+      <div class="nav-header">
+        <a href="index.html" class="nav-header--link">
+          <div class="nav-header--logo"></div>
+        </a>
+        <div class="nav-header-hamburger" id="menuburger">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+      </div>
+      <div class="nav-container" id="menunavlist">
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="vocabulaire.html" class="nav-menu-item--link">Cours de vocabulaire</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="multi-exo.html" class="nav-menu-item--link">Multi-exercices</a>
+          </li>
+          <li class="nav-menu-item nav-menu-dropdown" id="menudrop">
+            <span class="nav-menu-item--link">Tableaux</span>
+            <span class="icon-chevron-left" id="menudropicon"></span>
+            <ul class="nav-menu-dropdown-list" id="menudroplist">
+              <li class="nav-menu-dropdown-list-item"><a href="tableaux/kana.html" class="nav-menu-dropdown-list-item--link">Les kana</a></li>
+              <li class="nav-menu-dropdown-list-item"><a href="tableaux/nombres.html" class="nav-menu-dropdown-list-item--link">Les nombres</a></li>
+              <li class="nav-menu-dropdown-list-item"><a href="tableaux/heure.html" class="nav-menu-dropdown-list-item--link">L'heure</a></li>
+              <li class="nav-menu-dropdown-list-item"><a href="tableaux/dates.html" class="nav-menu-dropdown-list-item--link">Les dates</a></li>
+              <li class="nav-menu-dropdown-list-item"><a href="tableaux/particules.html" class="nav-menu-dropdown-list-item--link">Les particules</a></li>
+            </ul>
+          </li>
+          <li class="nav-menu-item">
+            <a href="a-propos.html" class="nav-menu-item--link">A propos</a>
+          </li>
+        </ul>
+        <div class="mode-dsk mode-dsk-toggle">
+          <div class="mode-toggle">
+            <span class="mode-dsk--sun icon-sun" title="Light mode"></span>
+            <span class="mode-dsk--moon icon-moon" title="Dark mode"></span>
+          </div>
+        </div>
+        <div class="mode-mob">
+          <span class="icon-sun"></span>
+          <label class="mode-mob-switch">
+            <input type="checkbox" class="mode-mob-switch--input">
+            <span class="mode-mob-switch--slider mode-mob-toggle" id="mode-mob-toggle"><span class="mode-mob-switch--slider--circle"></span></span>
+          </label>
+          <span class="icon-moon"></span>
+        </div>
+      </div> <!-- .nav-container -->
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="wrapper">
+      <span class="page-subtitle">Exercice</span>
+      <h1 class="page-title">Premiers mots en kanji</h1>
+      <section class="page-section">
+        <div class="box-info">
+          <h3 class="box-info--heading">Info box</h3>
+          <ul class="box-info--text">
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, explicabo.</li>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, asperiores!</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga reprehenderit sunt debitis ipsam labore corrupti quasi eaque quam accusantium cupiditate?</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, in?</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="page-section">
+        <h2 class="secondary-heading">Écris en rōmaji :</h2>
+        <span class="exercise-word">Le ciel</span>
+        <div class="form">
+          <label for="textInput" class="form-label">Rōmaji</label>
+          <input type="text" name="textInput" class="form-input">
+        </div>
+        <div class="subsection centered">
+          <a href="" class="button-form">Valider</a>
+        </div>
+        <br>
+      </section>
+      <section class="page-section">
+        <div class="form-feedback">
+          <p class="form-feedback--heading">Form feedback</p>
+          <div class="form-feedback-results">
+            <div class="form-feedback-results--item">
+              <span class="icon-check"></span> : 0
+            </div>
+            <div class="form-feedback-results--item">
+              <span class="icon-cross"></span> : 0
+            </div>
+          </div>
+          <p class="form-feedback--helptext">Bones réponses uniques : 0/20</p>
+        </div>
+      </section>
+      <section class="page-section">
+        <div class="justiflex">
+          <a href="" class="button-primary">
+            <div class="button-inner-container">
+              <span class="icon-chevron-left"></span> Retour
+            </div>
+          </a>
+          <a href="" class="button-secondary">
+            <div class="button-inner-container">
+              <span class="icon-file"></span> Vocabulaire
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-grid">
+        <div class="footer--logo"></div>
+        <div class="footer-copyright">&copy; 2019 - <script>document.write(new Date().getFullYear())</script> Kakikukeko</div>
+        <div class="footer-credits">
+          <p class="footer-credits--item">Programmation : <a href="mailto:flo.delmas@protonmail.com" target="_blank" class="footer-credits--item--link">Florian Delmas</a></p>
+          <p class="footer-credits--item">Design : <a href="http://petitchampi.me/fr" target="_blank" class="footer-credits--item--link">Esther Bauzou</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/darkmode.js"></script>
+  <script src="scripts/dropdown.js"></script>
+  <script src="scripts/accordion.js"></script>
+  <script src="scripts/nav-tabs.js"></script>
+  <script src="scripts/menu.js"></script>
+</body>
+</html>
