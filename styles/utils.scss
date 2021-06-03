@@ -47,10 +47,14 @@
     column-gap: 0;
   }
 }
-.centered {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+.center {
+  &-blocks {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &-text {
+    text-align: center;
+  }
 }
 .justiflex {
   display: flex;

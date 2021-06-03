@@ -41,7 +41,7 @@
   font-weight: 900;
   font-style: normal;
 }
-:root {
+.lightmode {
   --color-body: #fff;
   --color-text: #424242;
   --color-primary: #C5A858;
@@ -73,6 +73,43 @@
   --color-red: #E5A0A4;
   --color-table-borders: #acacac;
   --logo-img-path: url("../../assets/img/kakikukeko-logo-darkmode.svg");
+}
+
+* {
+  transition: color ease 0.05s, background-color ease 0.2s;
+  box-sizing: border-box;
+}
+
+.preload * {
+  transition: none !important;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 288px;
+  background-color: var(--color-body);
+  color: var(--color-text);
+  font-family: "m plus rounded 1c", sans-serif;
+  min-height: 100vh;
+  position: relative;
+}
+@media screen and (min-width: 943px) {
+  body {
+    padding-bottom: 150px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+p, ul {
+  line-height: 160%;
+}
+p a, ul a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .wrapper {
@@ -138,10 +175,12 @@
   column-gap: 0;
 }
 
-.centered {
-  text-align: center;
+.center-blocks {
   margin-left: auto;
   margin-right: auto;
+}
+.center-text {
+  text-align: center;
 }
 
 .justiflex {
@@ -233,43 +272,6 @@
   background-size: contain;
   width: 200px;
   margin-bottom: 10px;
-}
-
-* {
-  transition: color ease 0.1s, background-color ease 0.2s;
-  box-sizing: border-box;
-}
-
-.preload * {
-  transition: none !important;
-}
-
-body {
-  margin: 0;
-  padding-bottom: 288px;
-  background-color: var(--color-body);
-  color: var(--color-text);
-  font-family: "m plus rounded 1c", sans-serif;
-  min-height: 100vh;
-  position: relative;
-}
-@media screen and (min-width: 943px) {
-  body {
-    padding-bottom: 150px;
-  }
-}
-
-a {
-  text-decoration: none;
-}
-
-p, ul {
-  line-height: 160%;
-}
-p a, ul a {
-  color: var(--color-primary);
-  text-decoration: none;
-  font-weight: bold;
 }
 
 .nav {

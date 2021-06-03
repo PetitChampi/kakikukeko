@@ -15,3 +15,5 @@ Object.keys(accordions).forEach((i) => {
     }
   })
 })
+
+// export { accordions, accContent, accToggle, accIcon, accActivate }

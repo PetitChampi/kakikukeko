@@ -13,6 +13,7 @@ const dskMoon = document.querySelector('.mode-dsk--moon')
 
 const enableDarkMode = () => {
   document.body.classList.add('darkmode')
+  document.body.classList.remove('lightmode')
   // mobile
   checkbox.setAttribute('checked', '')
   circle.style.transform = 'translateX(24px)'
@@ -23,6 +24,7 @@ const enableDarkMode = () => {
 }
 
 const disableDarkMode = () => {
+  document.body.classList.add('lightmode')
   document.body.classList.remove('darkmode')
   // mobile
   checkbox.removeAttribute('checked')
