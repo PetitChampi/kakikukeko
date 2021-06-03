@@ -85,11 +85,11 @@
 }
 
 .main {
-  padding: 90px 0 60px;
+  padding: 100px 0 60px;
 }
 @media screen and (min-width: 630px) {
   .main {
-    padding: 105px 0 60px;
+    padding: 115px 0 60px;
   }
 }
 
@@ -240,14 +240,23 @@
   box-sizing: border-box;
 }
 
+.preload * {
+  transition: none !important;
+}
+
 body {
   margin: 0;
-  padding-bottom: 150px;
+  padding-bottom: 288px;
   background-color: var(--color-body);
   color: var(--color-text);
   font-family: "m plus rounded 1c", sans-serif;
   min-height: 100vh;
   position: relative;
+}
+@media screen and (min-width: 943px) {
+  body {
+    padding-bottom: 150px;
+  }
 }
 
 a {
