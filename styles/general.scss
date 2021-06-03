@@ -4,11 +4,12 @@
 }
 body {
   margin: 0;
-  padding: 0;
+  padding-bottom: 150px;
   background-color: var(--color-body);
   color: var(--color-text);
   font-family: $base-ff, sans-serif;
   min-height: 100vh;
+  position: relative;
 }
 
 a {
