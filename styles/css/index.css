@@ -80,6 +80,9 @@
   margin: auto;
   padding: 0 20px;
 }
+.wrapper-inner {
+  max-width: 800px;
+}
 
 .main {
   padding: 30px 0 60px;
@@ -126,8 +129,20 @@
   }
 }
 
+.nogap {
+  gap: 0;
+}
+.nogap-row {
+  row-gap: 0;
+}
+.nogap-col {
+  column-gap: 0;
+}
+
 .centered {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .justiflex {
@@ -759,7 +774,7 @@ p a, ul a {
 .button-form {
   color: var(--color-body);
   background-color: var(--color-secondary);
-  font-weight: bold;
+  font-weight: 500;
 }
 .button-form:hover {
   opacity: 0.8;
@@ -767,7 +782,7 @@ p a, ul a {
 .button-primary {
   color: var(--color-body);
   background-color: var(--color-primary);
-  font-weight: bold;
+  font-weight: 500;
 }
 .button-primary:hover {
   opacity: 0.8;

@@ -27,7 +27,7 @@
   &-form {
     color: var(--color-body);
     background-color: var(--color-secondary);
-    font-weight: bold;
+    font-weight: 500;
     &:hover {
       opacity: .8;
     }
@@ -35,7 +35,7 @@
   &-primary {
     color: var(--color-body);
     background-color: var(--color-primary);
-    font-weight: bold;
+    font-weight: 500;
     &:hover {
       opacity: .8;
     }
