@@ -1,6 +1,9 @@
 .footer {
   background-color: var(--color-primary-background);
   padding: 50px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   &-grid {
     display: grid;
     text-align: center;

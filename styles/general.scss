@@ -8,6 +8,7 @@ body {
   background-color: var(--color-body);
   color: var(--color-text);
   font-family: $base-ff, sans-serif;
+  min-height: 100vh;
 }
 
 a {
