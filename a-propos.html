@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil | Kakikukeko</title>
+  <script type="module" src="scripts/darkmode.js"></script>
+  <link rel="stylesheet" href="styles/css/index.css">
+  <link rel="stylesheet" href="styles/css/iconfont.css">
+</head>
+<body class="preload"></body>
+
+  <nav class="nav">
+    <div class="nav-wrapper wrapper">
+      <div class="nav-header">
+        <a href="index.html" class="nav-header--link">
+          <div class="nav-header--logo"></div>
+        </a>
+        <div class="nav-header-hamburger" id="menuburger">
+          <div class="bar bar1"></div>
+          <div class="bar bar2"></div>
+          <div class="bar bar3"></div>
+        </div>
+      </div>
+      <div class="nav-container" id="menunavlist">
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="vocabulaire.html" class="nav-menu-item--link">Cours de vocabulaire</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="multi-exo.html" class="nav-menu-item--link">Multi-exercices</a>
+          </li>
+          <li class="nav-menu-item nav-menu-dropdown" id="menudrop">
+            <span class="nav-menu-item--link">Tableaux</span>
+            <span class="icon-chevron-left" id="menudropicon"></span>
+            <ul class="nav-menu-dropdown-list" id="menudroplist">
+              <li class="nav-menu-dropdown-list-item"><a href="tableaux/kana.html" class="nav-menu-dropdown-list-item--link">Les kana</a></li>
+              <li class="nav-menu-dropdown-list-item"><a href="tableaux/nombres.html" class="nav-menu-dropdown-list-item--link">Les nombres</a></li>
+              <li class="nav-menu-dropdown-list-item"><a href="tableaux/heure.html" class="nav-menu-dropdown-list-item--link">L'heure</a></li>
+              <li class="nav-menu-dropdown-list-item"><a href="tableaux/dates.html" class="nav-menu-dropdown-list-item--link">Les dates</a></li>
+              <li class="nav-menu-dropdown-list-item"><a href="tableaux/particules.html" class="nav-menu-dropdown-list-item--link">Les particules</a></li>
+            </ul>
+          </li>
+          <li class="nav-menu-item">
+            <a href="a-propos.html" class="nav-menu-item--link">A propos</a>
+          </li>
+        </ul>
+        <div class="mode-dsk mode-dsk-toggle">
+          <div class="mode-toggle">
+            <span class="mode-dsk--sun icon-sun" title="Light mode"></span>
+            <span class="mode-dsk--moon icon-moon" title="Dark mode"></span>
+          </div>
+        </div>
+        <div class="mode-mob">
+          <span class="icon-sun"></span>
+          <label class="mode-mob-switch">
+            <input type="checkbox" class="mode-mob-switch--input">
+            <span class="mode-mob-switch--slider mode-mob-toggle" id="mode-mob-toggle"><span class="mode-mob-switch--slider--circle"></span></span>
+          </label>
+          <span class="icon-moon"></span>
+        </div>
+      </div> <!-- .nav-container -->
+    </div>
+  </nav>
+
+  <main class="main">
+    <div class="wrapper">
+      <div class="wrapper-inner center-blocks">
+        <h1 class="page-title center-text">À propos du site</h1>
+        <p class="regular-text">Ce site à été développé et est mis à votre disposition gratuitement. L'objectif est de permettre à tous d'apprendre le japonais plus facilement.</p>
+        <p class="regular-text">Vous pouvez d'ailleurs constater que ce site ne comprend aucune pub, malgré des frais d'hébergement et de location de nom de domaine.</p>
+        <p class="regular-text">Si vous tenez vraiment à récompenser mon travail et m'offrir une bière vous pouvez me faire un don via PayPal (paypal.me/titqn) ou me soutenir sur uTip (https://utip.io/titqn), cependant notez bien que la mise à disposition de ce site n'est en aucun cas dans un but lucratif.</p>
+        <section class="page-section">
+          <p class="regular-text">Merci aux tipeurs et donateurs :</p>
+          <ul class="regular-text">
+            <li>Alan : 5€</li>
+            <li>Arnaud : 5€</li>
+            <li>Jean-Damien : 5€</li>
+            <li>Marine : 2€</li>
+            <li>Boris : 30€</li>
+            <li>Antoine : 5€</li>
+          </ul>
+          <div class="page-section">
+            <p class="regular-text"><strong>UPDATE :</strong> Pour être transparent avec vous, les dons reçus couvrent encore 2 ans de frais. Je vous remercie !</p>
+          </div>
+        </section>
+        <section class="page-section">
+          <div class="box-info">
+            <h3 class="box-info--heading">Fonctionalités à venir :</h3>
+            <p class="box-info--text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic maiores non mollitia, iure et ab inventore perspiciatis fugit repudiandae quidem ex autem ad aliquid ratione, molestias nulla tenetur illum?</p>
+            <div class="subsection">
+              <h3 class="box-info--heading">Fonctionalités en étude :</h3>
+              <p class="box-info--text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic maiores non mollitia, iure et ab inventore perspiciatis fugit repudiandae quidem ex autem ad aliquid ratione, molestias nulla tenetur illum?</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer-grid">
+        <div class="footer--logo"></div>
+        <div class="footer-copyright">&copy; 2019 - <script>document.write(new Date().getFullYear())</script> Kakikukeko</div>
+        <div class="footer-credits">
+          <p class="footer-credits--item">Programmation : <a href="mailto:flo.delmas@protonmail.com" target="_blank" class="footer-credits--item--link">Florian Delmas</a></p>
+          <p class="footer-credits--item">Design : <a href="http://petitchampi.me/fr" target="_blank" class="footer-credits--item--link">Esther Bauzou</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/index.js"></script>
+</body>
+</html>
