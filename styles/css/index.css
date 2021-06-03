@@ -85,12 +85,11 @@
 }
 
 .main {
-  padding: 30px 0 60px;
-  margin-top: 60px;
+  padding: 90px 0 60px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 630px) {
   .main {
-    margin-top: 75px;
+    padding: 105px 0 60px;
   }
 }
 
@@ -107,7 +106,7 @@
   column-gap: 20px;
   row-gap: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 630px) {
   .grid-2 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -118,12 +117,12 @@
   column-gap: 20px;
   row-gap: 30px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 630px) {
   .grid-3 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (min-width: 892px) {
+@media screen and (min-width: 943px) {
   .grid-3 {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -150,7 +149,7 @@
   gap: 10px;
   justify-content: space-between;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 630px) {
   .justiflex {
     gap: 20px;
     justify-content: flex-start;
@@ -163,7 +162,7 @@
   margin-top: 0;
   line-height: 130%;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 630px) {
   .page-title {
     font-size: 3rem;
   }
@@ -221,7 +220,7 @@
   margin-right: 25px;
   font-size: 2em;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 630px) {
   .flex-heading--icon {
     font-size: 1.5em;
   }
@@ -247,6 +246,7 @@ body {
   background-color: var(--color-body);
   color: var(--color-text);
   font-family: "m plus rounded 1c", sans-serif;
+  min-height: 100vh;
 }
 
 a {
@@ -265,7 +265,7 @@ p a, ul a {
 .nav {
   overflow: auto;
 }
-@media screen and (min-width: 892px) {
+@media screen and (min-width: 943px) {
   .nav {
     position: fixed;
     top: 0;
@@ -297,7 +297,7 @@ p a, ul a {
   background-color: var(--color-body);
   box-shadow: 0px 5px 16px 0px var(--color-shadow);
 }
-@media screen and (min-width: 892px) {
+@media screen and (min-width: 943px) {
   .nav-header {
     display: inline-block;
     position: static;
@@ -315,7 +315,7 @@ p a, ul a {
   background: url(../../assets/img/kakikukeko-logo-mobile.svg) no-repeat;
   background-size: contain;
 }
-@media screen and (min-width: 892px) {
+@media screen and (min-width: 943px) {
   .nav-header--logo {
     background: var(--logo-img-path) no-repeat center;
     width: 200px;
@@ -330,7 +330,7 @@ p a, ul a {
   flex-direction: column;
   justify-content: space-between;
 }
-@media screen and (min-width: 892px) {
+@media screen and (min-width: 943px) {
   .nav-header-hamburger {
     display: none;
   }
@@ -364,7 +364,7 @@ p a, ul a {
   visibility: hidden;
   transition: opacity ease 0.2s, visibility ease 0.2s, background-color ease 0.2s;
 }
-@media screen and (min-width: 892px) {
+@media screen and (min-width: 943px) {
   .nav-container {
     visibility: visible;
     opacity: 1;
@@ -391,7 +391,7 @@ p a, ul a {
   margin: 0 0 50px;
   font-size: 1.25rem;
 }
-@media screen and (min-width: 892px) {
+@media screen and (min-width: 943px) {
   .nav-menu {
     display: flex;
     margin: 0;
@@ -409,7 +409,7 @@ p a, ul a {
 .nav-menu-item--link:hover {
   color: var(--color-primary);
 }
-@media screen and (min-width: 892px) {
+@media screen and (min-width: 943px) {
   .nav-menu-item--link {
     padding: 20px 0 20px 30px;
     font-size: 1rem;
@@ -425,12 +425,12 @@ p a, ul a {
 .nav-menu-item .icon-chevron-left-rotated {
   transform: rotate(90deg);
 }
-@media screen and (min-width: 892px) {
+@media screen and (min-width: 943px) {
   .nav-menu-item .icon-chevron-left-rotated {
     transform: rotate(-90deg);
   }
 }
-@media screen and (min-width: 892px) {
+@media screen and (min-width: 943px) {
   .nav-menu-item .icon-chevron-left {
     padding: 0;
     padding-right: 3px;
@@ -441,7 +441,7 @@ p a, ul a {
   color: var(--color-text);
   position: relative;
 }
-@media screen and (min-width: 892px) {
+@media screen and (min-width: 943px) {
   .nav-menu-dropdown:hover > .nav-menu-dropdown-list {
     opacity: 1;
     visibility: visible;
@@ -456,7 +456,7 @@ p a, ul a {
   max-height: 0;
   overflow: hidden;
 }
-@media screen and (min-width: 892px) {
+@media screen and (min-width: 943px) {
   .nav-menu-dropdown-list {
     position: absolute;
     opacity: 0;
@@ -492,12 +492,15 @@ p a, ul a {
 .footer {
   background-color: var(--color-primary-background);
   padding: 50px 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .footer-grid {
   display: grid;
   text-align: center;
 }
-@media screen and (min-width: 892px) {
+@media screen and (min-width: 943px) {
   .footer-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -508,7 +511,7 @@ p a, ul a {
   height: 35px;
   margin: 0 auto 50px;
 }
-@media screen and (min-width: 892px) {
+@media screen and (min-width: 943px) {
   .footer--logo {
     margin: -15px 0 0;
   }
@@ -516,7 +519,7 @@ p a, ul a {
 .footer-credits {
   margin-top: 30px;
 }
-@media screen and (min-width: 892px) {
+@media screen and (min-width: 943px) {
   .footer-credits {
     margin: 0;
     text-align: right;
@@ -535,7 +538,7 @@ p a, ul a {
   display: flex;
   align-items: center;
 }
-@media screen and (min-width: 892px) {
+@media screen and (min-width: 943px) {
   .mode-mob {
     display: none;
   }
@@ -587,7 +590,7 @@ p a, ul a {
   cursor: pointer;
   display: none;
 }
-@media screen and (min-width: 892px) {
+@media screen and (min-width: 943px) {
   .mode-dsk {
     display: inline-block;
   }
@@ -751,6 +754,11 @@ p a, ul a {
   align-items: center;
   justify-content: center;
 }
+.button-inner-container-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 .button-form, .button-primary, .button-secondary, .button-dropdown {
   display: inline-block;
   cursor: pointer;
@@ -768,8 +776,26 @@ p a, ul a {
   font-size: 1.5rem;
   line-height: 0;
 }
-.button-form .icon-file:before, .button-primary .icon-file:before, .button-secondary .icon-file:before, .button-dropdown .icon-file:before {
-  margin-right: 10px;
+.button-item {
+  display: block;
+  cursor: pointer;
+  color: var(--color-text);
+  background-color: var(--color-body);
+  border: 2px solid var(--color-primary);
+  padding: 10px 30px;
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 10px;
+  transition: all ease 0.2s;
+}
+.button-item span[class*=icon-] {
+  color: var(--color-primary);
+  margin-right: 25px;
+  font-size: 2rem;
+}
+.button-item:hover {
+  background-color: var(--color-primary-background);
 }
 .button-form {
   color: var(--color-body);
@@ -969,7 +995,7 @@ p a, ul a {
 .tcontainer-header {
   padding: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 630px) {
   .tcontainer-header {
     display: flex;
     justify-content: space-between;
@@ -990,7 +1016,7 @@ p a, ul a {
   margin-top: 30px;
   gap: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 630px) {
   .tcontainer-header-controls {
     margin: 0;
   }
@@ -1046,7 +1072,7 @@ p a, ul a {
   gap: 10px;
   margin-top: 20px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 630px) {
   .multiselect {
     grid-template-columns: repeat(2, 1fr);
   }
