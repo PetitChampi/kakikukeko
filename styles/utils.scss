@@ -8,9 +8,9 @@
   }
 }
 .main {
-  padding: 90px 0 60px; // top = menu height (60) + 30px
+  padding: 100px 0 60px; // top = menu height (60) + 40px
   @media screen and (min-width: $mobile-breakpoint) {
-  padding: 105px 0 60px; // top = menu height (75) + 30px
+    padding: 115px 0 60px; // top = menu height (75) + 40px
   }
 }
 .page-section {

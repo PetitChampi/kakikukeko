@@ -2,14 +2,20 @@
   transition: color ease .1s, background-color ease .2s;
   box-sizing: border-box;
 }
+.preload * {
+  transition: none !important;
+}
 body {
   margin: 0;
-  padding-bottom: 150px;
+  padding-bottom: 288px;
   background-color: var(--color-body);
   color: var(--color-text);
   font-family: $base-ff, sans-serif;
   min-height: 100vh;
   position: relative;
+  @media screen and (min-width: $tablet-breakpoint) {
+    padding-bottom: 150px;
+  }
 }
 
 a {
