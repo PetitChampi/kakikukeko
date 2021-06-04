@@ -187,6 +187,7 @@ p a, ul a {
   display: flex;
   gap: 10px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 630px) {
   .justiflex {

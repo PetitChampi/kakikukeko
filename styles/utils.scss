@@ -60,6 +60,7 @@
   display: flex;
   gap: 10px;
   justify-content: space-between;
+  flex-wrap: wrap;
   @media screen and (min-width: $mobile-breakpoint) {
     gap: 20px;
     justify-content: flex-start;
