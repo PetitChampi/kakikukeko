@@ -89,15 +89,17 @@
     &:hover, &:focus {
       background-color: var(--color-secondary-background);
     }
-    .icon-chevron-left:before {
-      display: inline-block;
-      transform: rotate(-90deg);
-      position: absolute;
-      top: 38%;
-      right: 16px;
-      font-size: .7rem;
-      pointer-events: none;
+    .icon-chevron-left {
       margin-right: 0;
+      &:before {
+        display: inline-block;
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 38%;
+        right: 16px;
+        font-size: .7rem;
+        pointer-events: none;
+      }
     }
     &-content {
       visibility: hidden;

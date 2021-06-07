@@ -855,6 +855,9 @@ p a, ul a {
 .button-dropdown:hover, .button-dropdown:focus {
   background-color: var(--color-secondary-background);
 }
+.button-dropdown .icon-chevron-left {
+  margin-right: 0;
+}
 .button-dropdown .icon-chevron-left:before {
   display: inline-block;
   transform: rotate(-90deg);
@@ -863,7 +866,6 @@ p a, ul a {
   right: 16px;
   font-size: 0.7rem;
   pointer-events: none;
-  margin-right: 0;
 }
 .button-dropdown-content {
   visibility: hidden;
@@ -1034,11 +1036,11 @@ p a, ul a {
   justify-content: space-between;
   align-items: center;
   margin-top: 30px;
-  gap: 20px;
 }
 @media screen and (min-width: 630px) {
   .tcontainer-header-controls {
     margin: 0;
+    gap: 20px;
   }
 }
 .tcontainer-header-controls--icon {
@@ -1144,6 +1146,7 @@ p a, ul a {
   padding-top: 56.25%;
   border-radius: 10px;
   margin: 30px 0;
+  overflow: hidden;
 }
 .lessonbox-video iframe {
   position: absolute;
