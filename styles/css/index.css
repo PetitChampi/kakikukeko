@@ -856,7 +856,7 @@ p a, ul a {
   background-color: var(--color-secondary-background);
 }
 .button-dropdown .icon-chevron-left {
-  margin-right: 0;
+  margin-right: 0 !important;
 }
 .button-dropdown .icon-chevron-left:before {
   display: inline-block;
@@ -1146,7 +1146,6 @@ p a, ul a {
   padding-top: 56.25%;
   border-radius: 10px;
   margin: 30px 0;
-  overflow: hidden;
 }
 .lessonbox-video iframe {
   position: absolute;
