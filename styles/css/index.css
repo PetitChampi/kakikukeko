@@ -54,6 +54,7 @@
   --color-shadow: rgba(0,0,0,.2);
   --color-green: #549245;
   --color-red: #a94e54;
+  --color-red-background: rgba(169, 78, 84, .1);
   --color-table-borders: #d7d7d7;
   --logo-img-path: url("../../assets/img/kakikukeko-logo-lightmode.svg");
 }
@@ -71,6 +72,7 @@
   --color-shadow: rgba(255,255,255,.3);
   --color-green: #97C38C;
   --color-red: #E5A0A4;
+  --color-red-background: rgba(229, 160, 164, .1);
   --color-table-borders: #acacac;
   --logo-img-path: url("../../assets/img/kakikukeko-logo-darkmode.svg");
 }
@@ -896,21 +898,26 @@ p a, ul a {
   opacity: 1;
 }
 
-.box-info, .box-info-alt {
+.box-info, .box-info-alt, .box-helper-error {
   background-color: var(--color-primary-background);
   border: 1px solid var(--color-primary);
   border-radius: 10px;
   padding: 15px 20px;
 }
-.box-info--heading, .box-info-alt--heading {
+.box-info--heading, .box-info-alt--heading, .box-helper-error--heading {
   margin: 0;
   font-size: 1.25rem;
 }
-.box-info--text, .box-info-alt--text {
+.box-info--text, .box-info-alt--text, .box-helper-error--text {
   margin-bottom: 0;
 }
 .box-info-alt {
   border: none;
+}
+.box-helper-error {
+  border-color: var(--color-red);
+  background-color: var(--color-red-background);
+  color: var(--color-red);
 }
 .box-item {
   border-radius: 20px;
