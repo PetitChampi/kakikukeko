@@ -7,6 +7,10 @@
     -webkit-border-radius: 10px;
     border-radius: 10px;
     margin: 30px 0;
+    &::before {
+      display: block;
+      content: "";
+    }
     iframe {
       position: absolute;
       top: 0;
