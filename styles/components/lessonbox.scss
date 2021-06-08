@@ -4,6 +4,7 @@
     overflow: hidden;
     width: 100%;
     padding-top: 56.25%;
+    -webkit-border-radius: 10px;
     border-radius: 10px;
     margin: 30px 0;
     iframe {
@@ -14,6 +15,9 @@
       right: 0;
       width: 100%;
       height: 100%;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      overflow: hidden;
     }
   }
   &-novideo {
