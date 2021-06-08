@@ -8,7 +8,7 @@ Object.keys(dropBtns).forEach((i) => {
 })
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
+window.addEventListener('click', (event) => {
   if (!event.target.matches('.button-dropdown') && !event.target.matches('.button-dropdown-content--item') && !event.target.matches('.check-container') && !event.target.matches('.check-container--checkbox')) {
     let i
     for (i = 0; i < dropList.length; i++) {
@@ -18,4 +18,4 @@ window.onclick = function(event) {
       }
     }
   }
-}
+})
