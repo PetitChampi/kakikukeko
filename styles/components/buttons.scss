@@ -54,6 +54,13 @@
     &:hover {
       opacity: .8;
     }
+    &-disabled {
+      opacity: .5;
+      cursor: not-allowed;
+      &:hover {
+        opacity: .5;
+      }
+    }
   }
   &-primary {
     color: var(--color-body);
